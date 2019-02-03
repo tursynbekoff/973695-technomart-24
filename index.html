@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>technomart</title>
-
+    <title>Technomart</title>
   </head>
   <body>
     <header class="header">
         <section class="header-top">
             <a href="index.html" class="logo"><img src="img/logo.svg"></a>
-            <form action="" class="search"></form>
+            <form class="search" method="post" action="https://echo.htmlacademy.ru">
+              <input type=text class="search-input"></input>
+            <form>
             <a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a>
             <a href="cart.html" class="header-link header-link-cart">Корзина: 0</a>
             <a href="order-page.html" class="header-button">Оформить заказ</a>
@@ -17,12 +18,12 @@
         <section class="header-info">
             <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
             <div class="header-contacts">
-                <b>+7(812)555-05-55</b>
+                <b class="tel">+7(812)555-05-55</b>
                 <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
             </div>
 
             <div class="header-user-nav">
-                <a href="signin.html" class="header-user-btn header-user-btn-signin">Войти</a>
+                <input type="button" class="header-user-btn header-user-btn-signin" value="Войти"></input>
                 <a href="signup.html" class="header-user-btn header-user-btn-signup">Регистрация</a>
             </div>
         </section>
@@ -59,9 +60,21 @@
           </div>
           <div class="second-block">
             <div class="drill">
-              <a href="drill.html">Дрели</a>
-              <div class="product-inner-frame">Соседям на радость!</div>
-              <a href="drill.html" class="button">Открыть каталог</a>
+              <div class="inner-upper-drill-section">
+                <h3 class="drill-title">Дрели</h3>
+                <p class="drill-text">Соседям на радость!</p>
+              </div>
+              <div class="inner-middle-drill-section">
+                <button class="inner-slider-button-left" arial-label="предыдущя модель дрели">
+                  <!-- <img src="#"/> -->
+                </button>
+                <button class="inner-slider-button-right" arial-label="следующая модель дрели">
+                  <!-- <img src="#"/> -->
+                </button>
+              </div>
+              <div class="inner-bottom-drill-section">
+                <a href="drill.html" class="button">Открыть каталог</a>
+              </div>
             </div>
             <div class="second-inner-block">
               <div class="discount">
@@ -84,22 +97,22 @@
         <div class="popular-products">
           <ul class="popular-product-list">
             <li>
-              <p class="product-text">Перфоратор BOSCH BFG 9000</p>
+              <h3 class="product-text">Перфоратор BOSCH BFG 9000</h3>
               <div class="old-price" style="text-decoration: line-through;">32500 Р.</div>
               <a href="gbosch9000.html" class="button">25500 Р.</a>
             </li>
             <li>
-              <p class="product-text">Перфоратор BOSCH BFG 3000</p>
+              <h3 class="product-text">Перфоратор BOSCH BFG 3000</h3>
               <div class="old-price" style="text-decoration: line-through;">22500 Р.</div>
               <a href="bosch3000.html" class="button">15500 Р.</a>
             </li>
             <li>
-              <p class="product-text">Перфоратор BOSCH BFG 6000</p>
+              <h3 class="product-text">Перфоратор BOSCH BFG 6000</h3>
               <div class="old-price" style="text-decoration: line-through;">30500 Р.</div>
               <a href="bosch6000.html" class="button">25500 Р.</a>
             </li>
             <li>
-              <p class="product-text">Перфоратор BOSCH BFG 2000</p>
+              <h3 class="product-text">Перфоратор BOSCH BFG 2000</h3>
               <a href="bosch2000.html" class="button">12500 Р.</a>
             </li>
           </ul>
@@ -128,14 +141,14 @@
           <h2 class="services-header">Сервисы</h2>
           <p class="services-paragraph">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="list-block">
+        <div class="list-button-block">
           <ul class="services-list">
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="guarantee.html">Гарантия</a></li>
-            <li><a href="credit.html">Кредит</a></li>
+            <li><button class="service" arial-label="Информация о доставке" >Доставка</button></li>
+            <li><button class="service" arial-label="Информация о гарантии">Гарантия</button></li>
+            <li><button class="service" arial-label="Информация о кредите">Кредит</button></li>
           </ul>
         </div>
-        <div class="lower-block">
+        <div class="button-action-block">
           <h2 class="delivery-header">Достака</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </div>
@@ -175,9 +188,9 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <nav class="lower-footer-navigation">
             <ul class="lower-footer-list">
-              <li><a href="material.html">Материалы</a></li>
-              <li><a href="heavy-tools.html">Техника</a></li>
-              <li><a href="tools.html">Инструмент</a></li>
+              <li><a href="material.html" aria-label="Раздел Материалы" >Материалы</a></li>
+              <li><a href="heavy-tools.html" aria-label="Раздел Техника">Техника</a></li>
+              <li><a href="tools.html" aria-label="Раздел Инструменты">Инструмент</a></li>
               <li><a href="special-offer.html">Спецпредложения</a></li>
             </ul>
           </nav>
@@ -189,9 +202,9 @@
           </div>
           <div class="footer-social">
             <ul class="social-buttons">
-              <li><a class="social" href="#">Вконтакте</a></li>
-              <li><a class="social" href="#">Фейсбук</a></li>
-              <li><a class="social" href="#">Инстаграм</a></li>
+              <li><a class="social" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
+              <li><a class="social" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a></li>
+              <li><a class="social" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
             </ul>
           </div>
           <div class="feedback">Обратная связь:
@@ -203,11 +216,32 @@
         </section>
     </footer>
 
-
     <section class="log-in-window">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль</p>
-      <span class="log-in">X</span>
+      <div class="login-upper-body">
+        <button class="close" arial-label="Закрыть окно входа в учетную запись"/>
+      </div>
+      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+        <div class="login-main-body">
+          <div class="login-main-margin">
+            <p>
+              <label for="name">Ваше имя:</label>
+              <input type="text" class="login-text" id="name" placeholder="Имя Фамилия"></input>
+            </p>
+            <p>
+              <label for="email">Ваше имя:</label>
+              <input type="text" class="login-text" id="email" placeholder="email@example.com"></input>
+            </p>
+          </div>
+          <div class="login-letter">
+            <label for="letter">Текст письма:</label>
+            <input type="text "id="letter" class="login-letter-text" placeholder="В свободной форме"> </input>
+          </div>
+        </div>
+        <div class="login-lower-body">
+          <input type="submit" value="ОТПРАВИТЬ">
+          </input>
+        </div>
+      </form>
     </section>
   </body>
 </html>
