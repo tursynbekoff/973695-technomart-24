@@ -5,16 +5,14 @@
     <title>Technomart</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="header">
         <section class="header-top">
           <div class="top-align">
-            <div class="logo top-elements logo-style">
-              <a href="index.html" class="logo">ТЕХНОМАРТ</a>
-            </div>
-            <div class="top-elements">
+              <a href="index.html" class="logo logo-style">ТЕХНОМАРТ</a>
               <form class="search" method="post" action="https://echo.htmlacademy.ru">
                 <label class="search-input" for="search-input">Поиск:</input>
                 <input type=text class="search-input" id="search-input"></input>
@@ -22,15 +20,14 @@
               <a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a>
               <a href="cart.html" class="header-link header-link-cart">Корзина: 0</a>
               <a href="order-page.html" class="header-button">Оформить заказ</a>
-            </div>
           </div>
         </section>
         <section class="header-info">
           <div class="top-middle-align">
-            <div class="header-title-section middle-top-element">
+            <div class="header-title-section">
               <h1 class="header-title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
             </div>
-            <div class="header-contacts middle-top-element">
+            <div class="header-contacts">
               <div class="telephone">
                 <b class="tel">+7(812)555-05-55</b>
               </div>
@@ -38,7 +35,7 @@
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               </div>
             </div>
-            <div class="header-user-nav middle-top-element">
+            <div class="header-user-nav">
               <input type="button" class="header-user-btn header-user-btn-signin" value="Войти"></input>
               <a href="signup.html" class="header-user-btn header-user-btn-signup">Регистрация</a>
             </div>
@@ -75,7 +72,6 @@
       <section class="products">
         <h2 class="visually-hidden">Основные Товары:</h2>
         <div class="product-frame">
-          <div class="first-block">
             <div class="product-cell material">
               <h3 class="product-cell-text">Материалы</h3>
               <div class="product-inner-frame">На любой вкус</div>
@@ -88,9 +84,7 @@
               <h3 class="product-cell-text">Техника</h3>
               <div class="product-inner-frame">ДЛЯ СТРОЙКИ</div>
             </div>
-          </div>
-          <div class="second-block">
-            <div class="drill block">
+            <div class="drill">
               <div class="inner-upper-drill-section inner-drill">
                 <h3 class="drill-title">Дрели</h3>
                 <p class="drill-text">Соседям на радость!</p>
@@ -105,17 +99,16 @@
                 <a href="drill.html" class="button">Открыть каталог</a>
               </div>
             </div>
-            <div class="second-inner-block block">
-              <div class="discounts column">
+            <div class="second-inner-block">
+              <div class="product-cell discounts">
                 <h3 class="product-cell-text">Скидки 50%</h3>
                 <div class="product-inner-frame">На 350 товаров</div>
               </div>
-              <div class="delivery column">
+              <div class="product-cell delivery">
                 <h3 class="product-cell-text">Доставка</h3>
                 <div class="product-inner-frame">Бесплатно</div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section class="popular-goods">
@@ -222,12 +215,11 @@
     </main>
     <footer class="index-footer">
         <section class="footer-information">
-          <div class="footer-upper-part">
-            <div class="footer-upper-part-align">
+          <div class="footer-upper-part-align">
               <div class="block-footer">
                 <a class="index-header-logo"><div class="logo">ТЕХНОМАРТ</div> </a>
               </div>
-              <nav class="upper-footer-navigation block-footer">
+              <nav class="upper-footer-navigation">
                 <div class="upper-footer-list">
                   <a href="company.html">Компания</a>
                   <a href="news.html">Новости</a>
@@ -236,13 +228,12 @@
                   <a href="contscts.html">Koнтакты</a>
                 </div>
               </nav>
-            </div>
           </div>
           <div class="footer-middle-part">
-            <div class="block-footer">
+            <div class="">
               <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55 </p>
             </div>
-            <nav class="lower-footer-navigation block-footer">
+            <nav class="lower-footer-navigation ">
               <a href="material.html" class="lower-footer-navigation" aria-label="Раздел Материалы" >Материалы</a>
               <a href="heavy-tools.html" class="lower-footer-navigation" aria-label="Раздел Техника">Техника</a>
               <a href="tools.html" class="lower-footer-navigation" aria-label="Раздел Инструменты">Инструмент</a>
@@ -253,20 +244,18 @@
         <section class="lower-footer">
           <div class="lower-footer-section">
             <div class="footer-rights">
-              <p class="footer-text"> 2010-2019 Компания "Техномарт" <br> Все права защищены</p>
+              <p class="footer-text">© 2010-2019 Компания "Техномарт" <br> Все права защищены</p>
             </div>
             <div class="footer-social">
               <a class="social" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a>
               <a class="social" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
               <a class="social" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a>
             </div>
-            <div class="footer-developer">
-              <div class="feedback">Обратная связь: <br>
-                <a href="feedback.html" class="email"> mail@htmalacademy.ru</a>
-              </div>
-              <div class="feedback">Разработано - <br>
-                <a href="developers.html" class="email"> htmlacademy.ru</a>
-              </div>
+            <div class="feedback">Обратная связь: <br>
+              <a href="feedback.html" class="email"> mail@htmalacademy.ru</a>
+            </div>
+            <div class="feedback">Разработано - <br>
+              <a href="developers.html" class="email"> htmlacademy.ru</a>
             </div>
           </div>
         </section>
