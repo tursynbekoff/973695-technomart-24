@@ -25,20 +25,23 @@ body {
 
 .header-top {
   text-align: center;
-  background-color: #243449;
+  background-color: #293449;
   width: 100%;
   margin-top: 0px auto;
 }
 
 .logo {
-  font-size: 23px;
+  font-size: 24px;
   background-color: #ee3643;
   width: 220px;
-  /* height: 47px; */
-  padding-top: 10px;
-  padding-bottom: 6px;
+  /* height: 4px; */
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 56px;
+  padding-right: 55px;
   text-align: center;
   vertical-align: center;
+  border-bottom:  5px #b52933 solid;
 }
 
 .top-align {
@@ -49,26 +52,88 @@ body {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
-  flex-wrap: wrap;
+  align-content: stretch;
+  flex-wrap: nowrap;
 }
+
+.top-align-undeline {
+  width: 940px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid black; */
+}
+
+/* .logo-underline {
+  width: 220px;
+  height: 5px;
+  background-color: #b52933;
+} */
 
 .logo-style  {
   /* border-bottom: 5px #B52933 solid; */
 }
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
 
+.placement {
+  margin-right: auto;
+  border: 1px red solid;
+}
+.bookmark-placement{
+  margin-right: 2px;
+}
+
+.internal-content {
+  margin-right: 30px;
+}
+
+.small-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  align-self: center;
+  object-fit: cover;
+}
 a {
+
   color: white;
   text-decoration: none;
 }
+
 
 .search-input {
   color: white;
   font-size: 17px;
 }
+.search-logo {
+  /*  */
+
+}
+
+.header-button {
+  background-color: #63a63e;
+  padding-left: 20px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  /* height: 42px; */
+  /* margin-bottom: auto; */
+  /* border-bottom: 1px #B52933 solid; */
+
+}
 
 .header-info {
   text-align: center;
-  height: 158px;
+
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
@@ -76,27 +141,33 @@ a {
 }
 
 .top-middle-align {
+  margin-top: 46px;
   width: 940px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
+  margin-bottom: 28px;
+  align-items: flex-start;
   flex-wrap: wrap;
+  padding-top: 0px;
   /* border: 1px solid black; */
 }
 
 .header-title-section {
+  margin-left: 50px;
   align-self: center;
+  display: inline-block;
   border: 1px solid black;
+  padding: 0px;
+  vertical-align: top;
+  margin-top: -8px;
 }
 
 .header-contacts {
-  /* margin-top: 46px;
-  margin-left: */
+
+  margin-left: 90px;
 }
 
 .header-user-nav {
@@ -105,6 +176,8 @@ a {
 
 
 .header-title {
+  font-weight: normal;
+  text-decoration: none;
   text-align: left;
   font-style: italic;
   font-size: 16px;
@@ -112,11 +185,14 @@ a {
   color: #ee3643;
 }
 
+
+
 .telephone {
-  border: 2px white solid;
+  border: 3px white solid;
   width: 270px;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 21px;
   color: #ee3643;
 }
@@ -127,10 +203,35 @@ a {
   color: #32425c;
 }
 
+.header-user-nav {
+  margin-left: auto;
+  display: flex;
+}
+
 .header-user-btn {
    color: black;
    background-color: white;
    font-size: 21px;
+}
+
+.header-user-btn-signin {
+  border: 0px;
+  padding-left: 45px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  background-image: url("../img/icon-login.png");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+
+}
+
+.header-user-btn-signup {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navigation-section {
@@ -150,7 +251,7 @@ a {
   margin-left: auto;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #243449;
+  background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
 
@@ -173,12 +274,16 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 59px;
+  margin-bottom: 53px;
   width: 940px;
   /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  /* align-content: stretch; */
+  align-items: flex-start;
+
   /* border: 1px solid blue; */
 }
 
@@ -222,12 +327,15 @@ h3 .product-cell, h3 .drill-title  {
   /* background-color: black; */
   width: 620px;
   height: 266px;
-  background-image: url("img/drill-background.jpg");
+  flex-grow: 1;
+  background-image: url("../img/drill-background.jpg");
   background-repeat: no-repeat;
+  background-position: 0% 0%;
   /* background-position: 50% 50%; */
   margin-right: 20px;
-  margin-top: 20px;
-  /* border: -1px red solid; */
+  /* margin-bottom: auto; */
+  /* border: 1px red solid; */
+
 }
 
 .drill-text {
@@ -297,7 +405,7 @@ h3 .product-cell, h3 .drill-title  {
   padding-bottom: 3px;
   background-color: #F9F5F0;
   /* border: 1px black solid; */
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .button {
@@ -499,7 +607,7 @@ img.logo-icon {
 .about-align {
   width: 949px;
   text-align: left;
-  padding-bottom: 86px;
+  padding-bottom: 87px;
   /* border: 1px black solid; */
   display: table;
   margin: auto;

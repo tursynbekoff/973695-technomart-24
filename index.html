@@ -12,16 +12,26 @@
     <header class="header">
         <section class="header-top">
           <div class="top-align">
-              <a href="index.html" class="logo logo-style">ТЕХНОМАРТ</a>
-              <form class="search" method="post" action="https://echo.htmlacademy.ru">
-                <label class="search-input" for="search-input">Поиск:</input>
-                <input type=text class="search-input" id="search-input"></input>
-              <form>
-              <a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a>
-              <a href="cart.html" class="header-link header-link-cart">Корзина: 0</a>
-              <a href="order-page.html" class="header-button">Оформить заказ</a>
+              <div><a href="index.html" class="logo logo-style">ТЕХНОМАРТ</a></div>
+              <div class="icon-container placement">
+                <img class="small-icon" src="img/icon-search.png"/>
+                <form class="search" method="post" action="https://echo.htmlacademy.ru">
+                  <label class="search-input" for="search-input">Поиск:</label>
+                  <input type=text class="search-input" id="search-input"></input>
+                </form>
+              </div>
+              <div class="icon-container bookmark-placement">
+                <img class="small-icon" src="img/icon-bookmark.png"/>
+                <div class="internal-content"><a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a></div>
+              </div>
+              <div class="icon-container">
+                <img class="small-icon" src="img/cart-icon.png"/>
+                <div class="internal-content"><a href="cart.html" class="header-link header-link-cart">Корзина: 0</a></div>
+              </div>
+              <div class="header-button"><a href="order-page.html" >Оформить заказ</a></div>
           </div>
         </section>
+
         <section class="header-info">
           <div class="top-middle-align">
             <div class="header-title-section">
@@ -29,7 +39,8 @@
             </div>
             <div class="header-contacts">
               <div class="telephone">
-                <b class="tel">+7(812)555-05-55</b>
+                <img class="small-icon" src="img/icon-phone.png"/>
+                <b class="tel">+7 (812) 555-05-55</b>
               </div>
               <div class="adress">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -37,7 +48,7 @@
             </div>
             <div class="header-user-nav">
               <input type="button" class="header-user-btn header-user-btn-signin" value="Войти"></input>
-              <a href="signup.html" class="header-user-btn header-user-btn-signup">Регистрация</a>
+              <div class="header-user-btn header-user-btn-signup"><a href="signup.html" class="header-user-btn">Регистрация</a></div>
             </div>
           </div>
         </section>
