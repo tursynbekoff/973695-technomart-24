@@ -5,8 +5,8 @@
     <title>Technomart</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -22,11 +22,11 @@
               </div>
               <div class="icon-container bookmark-placement">
                 <img class="small-icon" src="img/icon-bookmark.png"/>
-                <div class="internal-content"><a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a></div>
+                <a href="bookmark.html" class="header-link header-link-bookmarks">Закладки: 0</a>
               </div>
-              <div class="icon-container">
+              <div class="icon-containe cart">
                 <img class="small-icon" src="img/cart-icon.png"/>
-                <div class="internal-content"><a href="cart.html" class="header-link header-link-cart">Корзина: 0</a></div>
+                <a href="cart.html" class="header-link header-link-cart">Корзина: 0</a>
               </div>
               <div class="header-button"><a href="order-page.html" >Оформить заказ</a></div>
           </div>
@@ -107,7 +107,7 @@
                 </button>
               </div>
               <div class="inner-bottom-drill-section inner-drill">
-                <a href="drill.html" class="button">Открыть каталог</a>
+                <a href="drill.html" class="button ">Открыть каталог</a>
               </div>
             </div>
             <div class="second-inner-block">
@@ -130,26 +130,26 @@
         <div class="popular-products">
           <div class="popular-product-element">
             <img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000"/>
-            <h3 class="product-text">Перфоратор BOSCH BFG 9000</h3>
-            <div class="old price" >32500 Р.</div>
-            <a href="gbosch9000.html" class="button price">25500 Р.</a>
+            <h3 class="goods-text">Перфоратор BOSCH BFG 9000</h3>
+            <div class="old" >32500 Р.</div>
+            <a href="gbosch9000.html"><div class="new-price">25500 Р.</div></a>
           </div>
           <div class="popular-product-element">
             <img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000"/>
-            <h3 class="product-text">Перфоратор BOSCH BFG 3000</h3>
-            <div class="old price" >22500 Р.</div>
-            <a href="bosch3000.html" class="button price">15500 Р.</a>
+            <h3 class="goods-text">Перфоратор BOSCH BFG 3000</h3>
+            <div class="old" >22500 Р.</div>
+            <a href="bosch3000.html"><div class="new-price">15500 Р.</div></a>
           </div>
           <div class="popular-product-element">
             <img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000"/>
-            <h3 class="product-text">Перфоратор BOSCH BFG 6000</h3>
-            <div class="old price" >30500 Р.</div>
-            <a href="bosch6000.html" class="button price">25500 Р.</a>
+            <h3 class="goods-text">Перфоратор BOSCH BFG 6000</h3>
+            <div class="old" >30500 Р.</div>
+            <a href="bosch6000.html"><div class="new-price">25500 Р.</div></a>
           </div>
           <div class="popular-product-element">
             <img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000"/>
-            <h3 class="product-text">Перфоратор BOSCH BFG 2000</h3>
-            <a href="bosch2000.html" class="button price">12500 Р.</a>
+            <h3 class="goods-text">Перфоратор BOSCH BFG 2000</h3>
+            <a href="bosch2000.html"><div class="new-price"> 12500 Р.</div></a>
           </div>
         </div>
       </section>
@@ -227,29 +227,21 @@
     <footer class="index-footer">
         <section class="footer-information">
           <div class="footer-upper-part-align">
-              <div class="block-footer">
-                <a class="index-header-logo"><div class="logo">ТЕХНОМАРТ</div> </a>
-              </div>
+              <a class="footer-logo">ТЕХНОМАРТ</a>
               <nav class="upper-footer-navigation">
-                <div class="upper-footer-list">
-                  <a href="company.html">Компания</a>
-                  <a href="news.html">Новости</a>
-                  <a href="catalog.shtml">Каталог</a>
-                  <a href="delivery.html">Доставка</a>
-                  <a href="contscts.html">Koнтакты</a>
-                </div>
+                <a href="company.html" class="upper-footer-links">Компания</a>
+                <a href="news.html" class="upper-footer-links">Новости</a>
+                <a href="catalog.html" class="upper-footer-links">Каталог</a>
+                <a href="delivery.html" class="upper-footer-links">Доставка</a>
+                <a href="contscts.html" class="upper-footer-links">Koнтакты</a>
               </nav>
           </div>
           <div class="footer-middle-part">
-            <div class="">
-              <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55 </p>
-            </div>
-            <nav class="lower-footer-navigation ">
-              <a href="material.html" class="lower-footer-navigation" aria-label="Раздел Материалы" >Материалы</a>
-              <a href="heavy-tools.html" class="lower-footer-navigation" aria-label="Раздел Техника">Техника</a>
-              <a href="tools.html" class="lower-footer-navigation" aria-label="Раздел Инструменты">Инструмент</a>
-              <a href="special-offer.html" class="lower-footer-navigation" aria-label="Спецпредложения">Спецпредложения</a>
-            </nav>
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55 </p>
+            <a href="material.html" class="lower-footer-navigation" aria-label="Раздел Материалы" >Материалы</a>
+            <a href="heavy-tools.html" class="lower-footer-navigation" aria-label="Раздел Техника">Техника</a>
+            <a href="tools.html" class="lower-footer-navigation" aria-label="Раздел Инструменты">Инструмент</a>
+            <a href="special-offer.html" class="lower-footer-navigation" aria-label="Спецпредложения">Спецпредложения</a>
           </div>
         </section>
         <section class="lower-footer">
@@ -258,9 +250,15 @@
               <p class="footer-text">© 2010-2019 Компания "Техномарт" <br> Все права защищены</p>
             </div>
             <div class="footer-social">
-              <a class="social" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a>
-              <a class="social" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
-              <a class="social" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a>
+              <div class="social-decoration">
+                <a class="social" href="#" aria-label="Техномарт во Вконтакте"><img class="small-icon" src="img/vk-icon.png"/></a>
+              </div>
+              <div class="social-decoration">
+                <a class="social" href="#" aria-label="Техномарт на Фейсбуке"><img class="small-icon" src="img/fb-icon.png"/></a>
+              </div>
+              <div class="social-decoration">
+                <a class="social" href="#" aria-label="Техномарт в Инстаграме"><img class="small-icon" src="img/insta-icon.png"/></a>
+              </div>
             </div>
             <div class="feedback">Обратная связь: <br>
               <a href="feedback.html" class="email"> mail@htmalacademy.ru</a>
