@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta charset="utf-8">
-<title>Technomart</title>
-<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
-<base href="https://htmlacademy-htmlcss.github.io/973695-technomart-24/3/">
+
+<head>
+  <meta charset="utf-8">
+  <title>Technomart Catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
       <div class="top-align">
         <ul class="inner-block">
           <li class="top-block">
-            <a href="index.html" class="main-logo logo">ТЕХНОМАРТ</a>
+            <a class="logo-style" href="index.html"></a>
           </li>
           <li class="top-block">
             <form class="search" method="post" action="https://echo.htmlacademy.ru">
@@ -40,7 +41,7 @@
     <section class="header-info">
       <div class="top-middle-align">
         <div class="header-title-section">
-          <h1 class="header-title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
+          <h1 class="header-title">Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
         </div>
         <div class="header-contacts">
           <div class="telephone">
@@ -180,7 +181,7 @@
             </label>
           </div>
         </div>
-        <button type="button" class="filter-button">ПОКАЗАТЬ</button>
+        <button type="submit" class="filter-button">ПОКАЗАТЬ</button>
       </form>
 
       <div class="sorting">
@@ -312,7 +313,7 @@
   <footer class="index-footer">
     <section class="footer-information">
       <div class="footer-upper-part-align">
-        <a class="footer-logo-main footer-logo">ТЕХНОМАРТ</a>
+        <a class="footer-logo-main footer-logo" href="index.html"></a>
         <nav class="upper-footer-navigation">
           <a href="company.html" class="upper-footer-links">Компания</a>
           <a href="news.html" class="upper-footer-links">Новости</a>
@@ -322,7 +323,7 @@
         </nav>
       </div>
       <div class="footer-middle-part">
-        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55 </p>
+        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55 </p>
         <a href="material.html" class="lower-footer-navigation">Материалы</a>
         <a href="heavy-tools.html" class="lower-footer-navigation">Техника</a>
         <a href="tools.html" class="lower-footer-navigation">Инструмент</a>
@@ -332,7 +333,7 @@
     <section class="lower-footer">
       <div class="lower-footer-section">
         <div class="footer-rights">
-          <p class="footer-text">© 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
+          <p class="footer-text">© 2010–2019 Компания «Техномарт» Все права защищены</p>
         </div>
         <div class="footer-social">
           <a class="social vk" href="#" aria-label="Техномарт во Вконтакте"></a>
@@ -340,10 +341,10 @@
           <a class="social ig" href="#" aria-label="Техномарт в Инстаграме"></a>
         </div>
         <div class="feedback-content">
-          <div class="feedback">Обратная связь: <br>
+          <div class="feedback">Обратная связь:
             <a class="feedback-link" href="feedback.html"> mail@htmlacademy.ru</a>
           </div>
-          <div class="feedback">Разработано — <br>
+          <div class="feedback">Разработано —
             <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
@@ -352,13 +353,13 @@
   </footer>
 
   <section class="modal catalog-popup-window hide-window">
-    <button class="catalog-popup-close-button" value="Закрыть окно добавть в корзину"></button>
+    <button type="button" class="catalog-popup-close-button"></button>
     <div class="popup-announsment">
       <div class="popup-image"></div>Товар добавлен в корзину!
     </div>
     <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <button class="popup-confirm-order-button" value="ОФОРМИТЬ ЗАКАЗ">ОФОРМИТЬ ЗАКАЗ</button>
-      <button class="popup-shop-continue-button" value="ОФОРМИТЬ ЗАКАЗ">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      <button type="submit" class="popup-confirm-order-button" value="ОФОРМИТЬ ЗАКАЗ">ОФОРМИТЬ ЗАКАЗ</button>
+      <button type="button" class="popup-shop-continue-button" value="ОФОРМИТЬ ЗАКАЗ">ПРОДОЛЖИТЬ ПОКУПКИ</button>
     </form>
   </section>
 
