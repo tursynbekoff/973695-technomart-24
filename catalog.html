@@ -7,12 +7,11 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.mini.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <header class="header">
     <section class="header-top">
       <div class="top-align">
@@ -112,9 +111,13 @@
           <h2 class="filter-header-price">
             ЦЕНА:
           </h2>
-          <div class="price-range">
-            <input value="0" min="0" max="35000" type="range" class="range-input" id="price-range-input">
-            <input value="30000" min="0" max="35000" type="range" class="range-input">
+
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
           </div>
 
           <div class="price-range-label">
@@ -123,6 +126,7 @@
             <input type="text" class="price-input second-label" for="price-range-input-two" placeholder="30000">
           </div>
         </div>
+
         <div class="sort-filter-manufacturer">
           <h2 class="filter-header-price">
             ПРОИЗВОДИТЕЛИ:
@@ -222,7 +226,7 @@
             <div class="good-container">
               <img src="img/bosch-bfg-2000.jpg" width="218" height="170" class="product-element-image visually-hidden" alt="Перфоратор BOSCH BFG 2000" />
               <div class="hidden-button-position">
-                <a class="hidden-button-buy" href="#">КУПИТЬ</a>
+                <a class="hidden-button-buy buy-button-test" href="#">КУПИТЬ</a>
                 <a class="product-button-bookmark" href="#">В ЗАКЛАДКИ</a>
               </div>
               <div class="new-label"></div>
@@ -303,8 +307,8 @@
     <div class="good-info-background">
       <div class="about-goods">
         <h3 class="title-about-goods">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
-        <p class="text-about-goods">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
+        <p class="text-about-goods">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. </p>
+        <p class="text-about-goods-second">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
           молоток и ударная дрель.
         </p>
       </div>
@@ -363,7 +367,8 @@
       <button type="button" class="popup-shop-continue-button" value="ОФОРМИТЬ ЗАКАЗ">ПРОДОЛЖИТЬ ПОКУПКИ</button>
     </form>
   </section>
-
+  <!-- <script src="js/script.min.js"></script> -->
+  <script src="js/script-catalog.js"></script>
 </body>
 
 </html>

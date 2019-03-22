@@ -547,9 +547,6 @@ a {
   margin-left: 21px;
   margin-top: 8px;
   padding-right: 32px;
-  background-image: url("../img/user-separate-icon.png");
-  background-position: 80% 50%;
-  background-repeat: no-repeat;
 }
 
 .user-order::after {
@@ -1948,7 +1945,7 @@ a {
   -ms-flex-item-align: center;
   align-self: center;
   -webkit-transform: translateX(60px) translateY(2px);
-          transform: translateX(60px) translateY(2px);
+  transform: translateX(60px) translateY(2px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2020,12 +2017,12 @@ a {
 
 .feedback-content .feedback:nth-child(1) {
   -webkit-transform: translateX(47px);
-          transform: translateX(47px);
+  transform: translateX(47px);
 }
 
 .feedback-content .feedback:nth-child(2) {
   -webkit-transform: translateX(43px);
-          transform: translateX(43px);
+  transform: translateX(43px);
 }
 
 .feedback-link {
@@ -2424,41 +2421,49 @@ a {
   margin-bottom: 19px;
 }
 
-.price-range {
-  display: block;
-  position: relative;
-  margin-bottom: 10px;
+.range-controls {
   background-color: #f7f3ec;
-  outline: none;
+  position: relative;
   height: 80px;
+  margin-bottom: 10px;
 }
 
-.range-input {
-  position: absolute;
-  left: 20px;
-  top: 39px;
+.range-controls .scale {
+  height: 2px;
   width: 180px;
-  cursor: pointer;
-  -webkit-appearance: none;
+  background: #d7dcde;
+  transform: translateX(20px);
 }
 
-.range-input::-webkit-slider-runnable-track {
+.range-controls .bar {
+  margin-top: 39px;
+  width: 160px;
   height: 2px;
   background: #00ca74;
-  z-index: 0;
 }
 
-.range-input::-webkit-slider-thumb {
-  position: relative;
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 10px;
-  -webkit-transform: translateY(-9px);
-  transform: translateY(-9px);
-  background-image: url("../img/filter-button.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.range-toggle {
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 20px;
+}
+
+.range-toggle-max {
+  right: 40px;
 }
 
 .price-range-label {
@@ -2625,15 +2630,21 @@ a {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .text-about-goods {
-  margin-top: -7px;
   font-size: 13px;
   font-weight: 500;
-  line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+}
+
+.text-about-goods-second {
+  margin-top: -8px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 24px;
 }
 
 .hide-window {
