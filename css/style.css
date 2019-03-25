@@ -98,7 +98,6 @@ img {
   width: 220px;
   height: 47px;
   background-color: #ee3643;
-  background: url("../img/main-logo.png") no-repeat 0 0;
 }
 
 .header-top ul li:nth-child(1) a.logo-style {
@@ -106,12 +105,12 @@ img {
   cursor: pointer;
 }
 
-.header-top ul li:nth-child(1) a.logo-style:hover {
-  background-image: url("../img/main-logo-hover.png");
+.header-top ul li:nth-child(1) a.logo-style:hover img {
+  content: url("../img/main-logo-hover.png");
 }
 
-.header-top ul li:nth-child(1) a.logo-style:active {
-  background-image: url("../img/main-logo-active.png");
+.header-top ul li:nth-child(1) a.logo-style:active img {
+  content: url("../img/main-logo-active.png");
 }
 
 .top-block {
@@ -423,6 +422,11 @@ a {
   line-height: 23px;
   color: #ee3643;
   padding-left: 2px;
+}
+
+.header-title-section h1:nth-child(2) {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .telephone {
@@ -827,10 +831,14 @@ a {
   text-align: center;
   margin-left: 25px;
   margin-top: 12px;
+  margin-bottom: 5px;
   background: rgba(0, 0, 0, 0.09);
   border: 5px rgba(0, 0, 0, 0.00) solid;
   border-radius: 2px 2px;
   text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .product-inner-frame:hover {
@@ -1538,6 +1546,8 @@ a {
   height: 150px;
   display: inline-block;
   vertical-align: top;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .button-action-block ul {
@@ -1548,14 +1558,17 @@ a {
 
 .button-action-block li:nth-child(1) {
   width: 278px;
+  height: 120px;
 }
 
 .button-action-block li:nth-child(2) {
   width: 386px;
+  height: 120px;
 }
 
 .button-action-block li:nth-child(3) {
   width: 379px;
+  height: 90px;
 }
 
 .button-action-block li:nth-child(1) p::after {
@@ -1658,6 +1671,7 @@ a {
 }
 
 .about .about-text {
+  width: 390px;
   margin-bottom: 11px;
   margin-top: 24px;
 }
@@ -1701,6 +1715,10 @@ a {
 .about-right .about-header {
   margin-top: 15px;
   margin-bottom: 24px;
+}
+
+.about-right p {
+  width: 182px;
 }
 
 .about-image {
@@ -1771,11 +1789,20 @@ a {
   width: 220px;
   height: 68px;
   display: block;
-  background: url("../img/footer-logo.png") no-repeat 0 0;
 }
 
 .footer-logo {
   cursor: pointer;
+}
+
+a.footer-logo:hover img {
+  background-color: #ca2c37;
+  content: url("../img/footer-logo-hover.png")
+}
+
+a.footer-logo:active img {
+  background-color: #ba2732;
+  content: url("../img/footer-logo-active.png")
 }
 
 .footer-logo:hover {
@@ -2531,7 +2558,7 @@ a {
   -ms-flex-pack: start;
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 19px;
   padding-top: 12px;
   padding-right: 0px;
@@ -2617,7 +2644,6 @@ a {
 .tooltip {
   position: relative;
   display: inline-block;
-  /* If you want dots under the hoverable text */
 }
 
 .tooltip .tooltiptext {
@@ -2628,12 +2654,10 @@ a {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-  /* Position the tooltip text - see examples below! */
   width: 120px;
   bottom: 100%;
   left: 50%;
   margin-left: -60px;
-  /* Use half of the width (120/2 = 60), to center the tooltip */
   position: absolute;
   z-index: 1;
 }
@@ -2991,50 +3015,50 @@ a {
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
 
   90% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
 
   90% {
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
   }
 
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 .modal-show {
   -webkit-animation-name: bounce;
-          animation-name: bounce;
+  animation-name: bounce;
   -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  animation-duration: 0.6s;
 }
